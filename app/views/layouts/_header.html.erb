@@ -2,20 +2,27 @@
     <section class="header-content">
         <div class="mobile-navBtn"><span></span></div>
         <div class="header-logo">
-            <a href="#">Logo</a>
+            <%= link_to  "Logo", root_path %>
         </div>
         <nav class="header-nav">
             <ul>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Investment packages</a></li>
-                <li><a href="#">Referral program</a></li>
-                
-                <li><a href="#">FAQ</a></li>
+                <li>
+                  <%= link_to  "About us", about_us_index_path %>
+                </li>
+                <li>
+                  <%= link_to  "Investment packages", investment_pakages_index_path %>
+                </li>
+                <li>
+                  <%= link_to  "Referral program", referal_program_index_path %>
+                </li>
+                <li>
+                  <%= link_to  "FAQ", faq_index_path %>
+                </li>
             </ul>
         </nav>
         <div class="header-auth">
             <a class="center" href="#">Login</a>
-            <a href="#">Registration</a> 
+            <a href="">Registration</a> 
         </div>
     </section>
 </header>
